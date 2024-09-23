@@ -1,9 +1,11 @@
 {
   "compilerOptions": {
+    "target": "ES6",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "strict": true,
+    "forceConsistentCasingInFileNames": true, // 强制文件名大小写一致
     "noEmit": true,
     "esModuleInterop": true,
     "module": "esnext",
@@ -11,14 +13,17 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "jsx": "preserve",
+    "baseUrl": "src",
     "incremental": true,
+    "experimentalDecorators":true,
+    "emitDecoratorMetadata": true, // 正确处理装饰器
     "plugins": [
       {
         "name": "next"
       }
     ],
     "paths": {
-      "src/*": ["./src/*"]
+      "@/*": ["*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],

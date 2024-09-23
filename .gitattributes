@@ -1,0 +1,13 @@
+# 自动检测文本文件
+* text=auto
+
+# 明确指定特定文件类型使用 LF
+*.js text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.jsx text eol=lf
+
+# 明确指定特定文件类型使用 CRLF（如需要）
+# *.bat text eol=crlf
+# *.cmd text eol=crlf
